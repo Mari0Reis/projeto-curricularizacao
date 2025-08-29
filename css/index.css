@@ -1,0 +1,189 @@
+ body {
+    height: 100vh;
+}
+
+.primary-font {
+    font-family: serif;
+    color: black;
+}
+
+.menu-item {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 100px;
+}
+
+.subtitle {
+    font-style: italic;
+    font-size: 50px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+nav {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    padding: 2% 2%;
+    background-color: rgba(0, 0, 0, 0.080);
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+ nav a:hover {
+     color: white;
+ }
+
+
+.content {
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+#inicio {
+    background-image: url("../img/filhote.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inicio span {
+    text-align: center;
+}
+
+#missao {
+    background-color: #71689e
+}
+
+#acapra-titulo,
+#acapra-contato {
+    font-size: 100px;
+    font-weight: bold;
+    color: #4B00E0;
+    margin: 0;
+    letter-spacing: 5px;
+}
+
+#acapra-subtitulo {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+    margin-top: -10px;
+}
+
+#sobre {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    width: max-content;
+    animation: scroll-left 60s linear infinite;
+    gap: 20px;
+
+}
+
+.carousel-track img {
+    max-width: 340px;
+    max-height: 340px;
+    min-width: 140px;
+    min-height: 140px;
+    padding: 0 10px;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Container das imagens lado a lado */
+.imagens-lado-a-lado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Estilo das imagens */
+.imagens-lado-a-lado img {
+    max-width: 45vw;
+    /* cada imagem ocupa até 45% da largura da viewport */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+#cao,
+#missao,
+#ajuda,
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .imagens-lado-a-lado {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagens-lado-a-lado img {
+        max-width: 90vw;
+        margin-bottom: 20px;
+    }
+}
+
+#contato {
+    background-image: url("../img/contatonos.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#contato-img {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contato-img img {
+    width: 25%;
+}
