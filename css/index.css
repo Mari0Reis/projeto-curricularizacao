@@ -188,3 +188,29 @@ nav a {
 #contato-img img {
     width: 25%;
 }
+
+/*informação*/
+
+#IMPORTANTE {
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#acapra-aviso {
+    font-size: 45px;
+    color: red;
+}
+
+hr {
+  border: none;
+  height: 3px;
+  background-color: red; 
+  margin: 20px 0;
+}
+
+#sub-titulos {
+    color: red;
+    font-size: 27;
+}
