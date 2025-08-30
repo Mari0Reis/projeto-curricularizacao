@@ -159,6 +159,8 @@ nav a {
     justify-content: center;
 }
 
+
+
 @media (max-width: 600px) {
     .imagens-lado-a-lado {
         flex-direction: column;
@@ -170,6 +172,52 @@ nav a {
         margin-bottom: 20px;
     }
 }
+.noticias {
+  max-width: 800px;
+  margin: auto;
+  font-style: italic;
+  font-size: 18px;
+}
+
+.noticias h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin: 0;
+  color: #333;
+}
+
+.card small {
+  color: gray;
+}
+
+.card p {
+  margin: 10px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  background: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
 
 #contato {
     background-image: url("../img/contatonos.png");
